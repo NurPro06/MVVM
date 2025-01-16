@@ -1,10 +1,8 @@
 package com.example.mvvm
 
-class CounterModel {
+data class CounterModel(
+    val count : Int,
+    val isGreenText : Boolean = false,
+    val showCongratulation : Boolean = false
 
-    private var count = 0
-
-    fun increment() {count++}
-    fun decrement(){count--}
-    fun getResult() = count
-}
+)
